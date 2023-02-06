@@ -1,3 +1,4 @@
+# %%
 import random
 
 def get_computer_choice():
@@ -13,6 +14,10 @@ def validate(user_choice):
     return user_choice
 
 def get_winner(computer_choice, user_choice):
+    user_choice = validate(user_choice)
+    user_choice = user_choice.capitalize()
+    computer_choice = computer_choice.capitalize()
+#     print(f"Game: {user_choice} vs {computer_choice}")
     if user_choice == computer_choice:
         print("It is a tie!")
         winner = None
@@ -31,4 +36,5 @@ def play():
 
 if __name__ == '__main__':
     play()
-    
+
+
