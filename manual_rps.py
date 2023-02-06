@@ -13,7 +13,6 @@ def validate(user_choice):
     return user_choice
 
 def get_winner(computer_choice, user_choice):
-    print(f"Game: {user_choice} vs {computer_choice}")
     if user_choice == computer_choice:
         print("It is a tie!")
         winner = None
